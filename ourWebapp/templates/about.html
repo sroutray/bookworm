@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+/*Summariser*/
+{% block content %}
+<header class="w3-container w3-black w3-center" style="padding:160px 16px;background-color:rgba(0,0,0,0.5);">
+    <h1 class="w3-margin w3-jumbo w3-text-white w3-display-top">Summariser</h1>
+    <p class="w3-text-white w3-xlarge w3-content">Hope you have understood the about the Summariser and Genrefy features from the introductory page. Since we know you have a book or article to summarize so lets get started!!<br /> To get the book summarized, please upload the book in the given box below:-</p>
+</header>
+<div class="w3-text-white w3-margin w3-content  w3-display-bottom  " style="align:center;float:right;flex-direction:row;justify-content:space-between;margin:100px">
+    <form action="{{url_for('about')}}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" value="Upload file" />
+        <div id="my">
+            <p align="center">
+                <button type="submit" style="font-size:10pt;color:black;background-color:white;border:2px solid black;padding:5px;border-radius:15%">SUBMIT</button>
+            </p>
+        </div>
+    </form>
+</div>
+<iframe href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_iframe_height_width" height="500" width="1140" class="w3-dispaly-middle w3-black w3-opacity-min" position="relative"></iframe>
+<div id="blah">
+    <iframe src='https://webchat.botframework.com/embed/notJARVIS?s=Aulx4C3TqCs.cwA.ulw.lG1iMacgBd87VXtT_9u87ErlFrd92H_uZHJi8Hv3eoc' height="350" width="250" align="right" class=" w3-white" position="relative" frameborder=1 draggable="true" title="Not J.A.R.V.I.S"></iframe>
+</div>
+{% endblock %}
+
+
